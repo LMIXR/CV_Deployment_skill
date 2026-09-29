@@ -79,7 +79,6 @@ cp -R /path/to/CV_Deployment_skill/cv-deployment-skills/cv-deploy .agents/skills
 ## 工程经验来自哪里
 
 - **原始经验仓库：[LMIXR/helpfile](https://github.com/LMIXR/helpfile)**。
-- 本次整理基于提交 [`db013a05`](https://github.com/LMIXR/helpfile/commit/db013a05ed08d29fdab01a684176af866e5ee565)。
 - [来源索引](cv-deployment-skills/cv-deploy/references/source-index.md) 收录 **119 个工程文本来源链接**，可追溯原始笔记、脚本与配置。
 - 原文中的个人路径、地址和口令未作为技能默认配置；旧版本组合保留为适用线索。
 
@@ -100,5 +99,3 @@ docs/
 ```
 
 维护 `cv-deployment-skills/cv-deploy/` 后，将变更同步到项目安装版本。欢迎在 [Issues](https://github.com/LMIXR/CV_Deployment_skill/issues) 补充真实部署场景，附上平台、版本、现象和相关日志，便于把新经验整理为可复用的指导。
-
-封面使用项目级 [canvas-design](.agents/skills/canvas-design/SKILL.md) 制作；工具与字体来源见[设计来源说明](docs/design/sources.md)。

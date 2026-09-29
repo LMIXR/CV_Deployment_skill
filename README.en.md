@@ -79,7 +79,6 @@ If the target project already has a skill with the same name, compare and merge 
 ## Where the experience comes from
 
 - **Original engineering notes: [LMIXR/helpfile](https://github.com/LMIXR/helpfile).**
-- This edition is based on commit [`db013a05`](https://github.com/LMIXR/helpfile/commit/db013a05ed08d29fdab01a684176af866e5ee565).
 - The [source index](cv-deployment-skills/cv-deploy/references/source-index.md) contains **119 links to engineering source files**, including the original notes, scripts, and configuration.
 - Personal paths, addresses, and passwords from the original material are not used as default configuration. Historical version combinations remain as clues to applicability.
 
@@ -100,5 +99,3 @@ docs/
 ```
 
 After updating `cv-deployment-skills/cv-deploy/`, sync the changes to the project installation. Contributions based on real deployment work are welcome through [Issues](https://github.com/LMIXR/CV_Deployment_skill/issues). Include the platform, versions, symptoms, and relevant logs so the experience can become reusable guidance.
-
-The cover was created with the project installation of [canvas-design](.agents/skills/canvas-design/SKILL.md). See [design attribution](docs/design/sources.md) for the tool and font sources.
