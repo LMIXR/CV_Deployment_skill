@@ -7,6 +7,10 @@
 <p align="center"><strong>真正实用的CV部署工程skill</strong></p>
 
 <p align="center">
+  <strong>简体中文</strong> · <a href="README.en.md">English</a>
+</p>
+
+<p align="center">
   让 agent 把工程经验用在具体环境里：配环境、编依赖、接视频、做部署。
 </p>
 
@@ -39,6 +43,8 @@ helpfile 记录了 CV 工程落地中的环境配置、依赖编译、视频接�
 | **配套工具** | Ansible、Jenkins、Jitsi、移动端与其他工具 | [工具指南](cv-deployment-skills/cv-deploy/references/tools.md) |
 
 资料涉及 **Ubuntu、CentOS、Windows、macOS、Jetson、树莓派、RK3399**，以及 Android / iOS 的部分配套工具。不同平台的经验深度不同，具体边界在指南中说明。
+
+项目介绍提供中英文两版；技能正文与主题参考资料目前以中文编写。
 
 ## 开始使用
 
