@@ -1,0 +1,4 @@
+interface:
+  display_name: "CV 工程部署"
+  short_description: "把 helpfile 经验用于多平台 CV 环境配置、依赖编译、视频接入与服务部署"
+  default_prompt: "使用 $cv-deploy，根据目标平台和现有项目约束，完成本次 CV 环境配置、依赖编译、视频接入或部署任务。"
