@@ -164,7 +164,7 @@
 
 ## MySQL
 
-整理后的入口：[MySQL](services.md)。
+整理后的入口：[MySQL](services.md#mysql)。
 
 - [mysql/centos.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/mysql/centos.md) — 笔记
 - [mysql/ubuntu.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/mysql/ubuntu.md) — 笔记
@@ -173,21 +173,21 @@
 
 ## MongoDB
 
-整理后的入口：[MongoDB](services.md)。
+整理后的入口：[MongoDB](services.md#mongodb)。
 
 - [mongo/centos.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/mongo/centos.md) — 笔记
 - [mongo/ubuntu.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/mongo/ubuntu.md) — 笔记
 
 ## Redis
 
-整理后的入口：[Redis](services.md)。
+整理后的入口：[Redis](services.md#redis)。
 
 - [redis/centos.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/redis/centos.md) — 笔记
 - [redis/ubuntu.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/redis/ubuntu.md) — 笔记
 
 ## MinIO
 
-整理后的入口：[MinIO](services.md)。
+整理后的入口：[MinIO](services.md#minio)。
 
 - [minio/ubuntu.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/minio/ubuntu.md) — 笔记
 
