@@ -22,7 +22,7 @@ Use `--repo LMIXR/CV_Deployment_skill` with `gh issue` and `gh pr` commands. Use
 When set to `yes`, PRs run through the same labels and states as issues, using the `gh pr` equivalents:
 
 - **Read a PR**: `gh pr view <number> --comments` and `gh pr diff <number>` for the diff.
-- **List external PRs for triage**: `gh pr list --state open --json number,title,body,labels,author,authorAssociation,comments` then keep only `authorAssociation` of `CONTRIBUTOR`, `FIRST_TIME_CONTRIBUTOR`, or `NONE` (drop `OWNER`/`MEMBER`/`COLLABORATOR`).
+- **List external PRs for triage**: `gh api --paginate 'repos/LMIXR/CV_Deployment_skill/pulls?state=open&per_page=100' --jq '.[] | select(.author_association == "CONTRIBUTOR" or .author_association == "FIRST_TIME_CONTRIBUTOR" or .author_association == "NONE")'`. The REST API exposes `author_association`; this keeps the existing external-author categories and drops `OWNER`/`MEMBER`/`COLLABORATOR`. For each retained PR, fetch the triage fields and comment bodies with `gh pr view <number> --repo LMIXR/CV_Deployment_skill --json number,title,body,labels,author,comments`; the REST list response does not contain comment bodies.
 - **Comment / label / close**: `gh pr comment`, `gh pr edit --add-label`/`--remove-label`, `gh pr close`.
 
 GitHub shares one number space across issues and PRs, so a bare `#42` may be either — resolve with `gh pr view 42` and fall back to `gh issue view 42`.
