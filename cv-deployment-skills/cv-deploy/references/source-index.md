@@ -193,20 +193,20 @@
 
 ## Kafka
 
-整理后的入口：[Kafka](services.md)。
+整理后的入口：[Kafka](services.md#kafka-与-flume)。
 
 - [kafka/ubuntu.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/kafka/ubuntu.md) — 笔记
 - [kafka/windows.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/kafka/windows.md) — 笔记
 
 ## Flume
 
-整理后的入口：[Flume](services.md)。
+整理后的入口：[Flume](services.md#kafka-与-flume)。
 
 - [flume/windows.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/flume/windows.md) — 笔记
 
 ## Tomcat
 
-整理后的入口：[Tomcat](services.md)。
+整理后的入口：[Tomcat](services.md#jdk--tomcat)。
 
 - [tomcat/centos.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/tomcat/centos.md) — 笔记
 - [tomcat/tomcat.service](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/tomcat/tomcat.service) — 脚本 / 配置
