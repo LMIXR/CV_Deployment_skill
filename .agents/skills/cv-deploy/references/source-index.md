@@ -222,7 +222,7 @@
 
 ## Jenkins
 
-整理后的入口：[Jenkins](tools.md)。
+整理后的入口：[Jenkins](tools.md#jenkins)。
 
 - [jenkins/安装.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/jenkins/%E5%AE%89%E8%A3%85.md) — 笔记
 - [jenkins/码云.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/jenkins/%E7%A0%81%E4%BA%91.md) — 笔记
@@ -237,7 +237,7 @@
 
 ## Android
 
-整理后的入口：[Android](tools.md)。
+整理后的入口：[Android](tools.md#android)。
 
 - [android/代理.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/android/%E4%BB%A3%E7%90%86.md) — 笔记
 
