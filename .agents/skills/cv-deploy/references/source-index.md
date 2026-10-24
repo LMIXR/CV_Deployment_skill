@@ -104,7 +104,7 @@
 
 ## Python 与 PyTorch
 
-整理后的入口：[Python 与 PyTorch](build.md)。
+整理后的入口：[Python 与 PyTorch](build.md#pythonpytorch-与-libtorch)。
 
 - [python/opencv.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/python/opencv.md) — 笔记
 - [python/pytorch.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/python/pytorch.md) — 笔记
