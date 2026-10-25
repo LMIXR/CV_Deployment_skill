@@ -138,7 +138,7 @@
 
 ## Docker 与容器服务
 
-整理后的入口：[Docker 与容器服务](deployment.md)。
+整理后的入口：[Docker 与容器服务](deployment.md#docker)。
 
 - [docker/docker.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/docker/docker.md) — 笔记
 - [docker/elk.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/docker/elk.md) — 笔记
