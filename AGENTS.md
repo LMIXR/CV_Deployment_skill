@@ -2,26 +2,28 @@
 
 ## Project Structure & Module Organization
 
-This workspace contains packaged applications, datasets, drivers, and deployment helpers rather than a single source tree. Treat top-level `*.zip` and `*.7z` files as immutable artifacts; do not edit archives in place. Operational files live at the root:
+This repository distributes the `cv-deploy` skill and deployment reference documentation derived from `LMIXR/helpfile`:
 
-- `start.sh` and `stop.sh` manage the `mkuserver` process.
-- `server.service` defines its systemd unit.
-- `pack.sh` gathers shared-library dependencies for `lsserver`.
-- `auto-del-disk.sh` enforces a recording-directory size limit.
-- `install.sh` is a vendored NVM installer; avoid project-specific edits to it.
+- `cv-deployment-skills/cv-deploy/` contains the skill source and its `references/` guides.
+- `.agents/skills/cv-deploy/` contains the installed copy; keep its contents identical to the source directory.
+- `cv-deployment-skills/README.md` describes skill maintenance and source provenance.
+- `README.md` and `README.en.md` provide the Chinese and English project introductions.
+- `docs/agents/` contains repository workflow guidance; `docs/design/` and `docs/assets/` contain cover documentation and assets.
+- `.agents/skills/canvas-design/` contains the cover design tool.
+
+Deployment scripts, service units, and binary packages discussed in the reference material are not root-level files in this repository. Follow the source links and check the target project's actual files before adapting or running deployment commands.
 
 Place new source code in a named project directory with its own `README.md`, not loose at the root. Keep generated data and binaries out of source directories.
 
 ## Build, Test, and Development Commands
 
-There is no repository-wide build or test runner. Validate only the component you change:
+There is no repository-wide build or test runner. For documentation and skill changes:
 
-- `bash -n script.sh` checks Bash syntax.
-- `sh -n start.sh pack.sh` checks POSIX shell syntax.
-- `shellcheck script.sh` performs static analysis when ShellCheck is installed.
-- `systemd-analyze verify server.service` validates the unit file; it may require systemd tooling.
+- `git diff --check` checks whitespace errors in the patch.
+- `diff -qr cv-deployment-skills/cv-deploy .agents/skills/cv-deploy` checks that both skill copies match.
+- Check changed Markdown links and heading anchors, and keep the two project introductions consistent when changing shared information.
 
-Do not run these scripts casually: they use machine-specific paths, manage processes, copy libraries, or delete files.
+For scripts or service units in an actual target project, use the appropriate shell syntax checker, ShellCheck when installed, or `systemd-analyze verify` on the files that exist there. Do not run deployment commands casually: they may manage processes, install dependencies, copy libraries, or delete files.
 
 ## Coding Style & Naming Conventions
 
@@ -29,7 +31,9 @@ Use four-space indentation in shell control blocks, quote variable expansions, a
 
 ## Testing Guidelines
 
-For shell changes, run the relevant syntax check and ShellCheck, then test against a temporary directory or disposable process. Cover success and failure paths, especially missing PID files, unavailable executables, paths containing spaces, and disk-cleanup boundaries. Never test deletion logic against production recordings.
+For documentation changes, validate the changed links, anchors, and skill-copy consistency. Documentation checks do not establish that deployment commands work across platforms. Record the environment and results when runtime verification is performed.
+
+When adapting shell code in a target project, run the relevant syntax check and ShellCheck, then test against a temporary directory or disposable process. Cover success and failure paths, especially missing PID files, unavailable executables, paths containing spaces, and disk-cleanup boundaries. Never test deletion logic against production recordings.
 
 ## Commit & Pull Request Guidelines
 
