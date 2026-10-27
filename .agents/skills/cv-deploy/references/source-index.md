@@ -112,13 +112,13 @@
 
 ## Paddle
 
-整理后的入口：[Paddle](build.md)。
+整理后的入口：[Paddle](build.md#推理库)。
 
 - [paddle/ubuntu.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/paddle/ubuntu.md) — 笔记
 
 ## tkDNN
 
-整理后的入口：[tkDNN](build.md)。
+整理后的入口：[tkDNN](build.md#推理库)。
 
 - [tkdnn/ubuntu.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/tkdnn/ubuntu.md) — 笔记
 
