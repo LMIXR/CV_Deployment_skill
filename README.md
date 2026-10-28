@@ -67,11 +67,11 @@ $cv-deploy 只生成离线部署方案和配置文件，本次不执行安装或
 
 ### 安装到其他项目
 
-下载本仓库后，在**目标项目根目录**执行，替换下面的仓库路径：
+下载本仓库后，在**目标项目根目录**执行，替换下面的仓库路径，并保留双引号以支持含空格的路径：
 
 ```sh
 mkdir -p .agents/skills
-cp -R /path/to/CV_Deployment_skill/cv-deployment-skills/cv-deploy .agents/skills/
+cp -R "/path/to/CV_Deployment_skill/cv-deployment-skills/cv-deploy" .agents/skills/
 ```
 
 如果目标项目已有同名技能，先比较并合并本地修改。其他 agent 可将整个 `cv-deploy` 目录放入其支持的技能位置，或直接读取 `SKILL.md`。主题参考资料随技能分发，可以离线阅读。

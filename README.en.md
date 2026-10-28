@@ -67,11 +67,11 @@ $cv-deploy Prepare only an offline deployment plan and configuration files. Do n
 
 ### Install it in another project
 
-Download this repository, then run the following from the **target project's root directory**, replacing the repository path:
+Download this repository, then run the following from the **target project's root directory**, replacing the repository path and keeping the double quotes to support paths containing spaces:
 
 ```sh
 mkdir -p .agents/skills
-cp -R /path/to/CV_Deployment_skill/cv-deployment-skills/cv-deploy .agents/skills/
+cp -R "/path/to/CV_Deployment_skill/cv-deployment-skills/cv-deploy" .agents/skills/
 ```
 
 If the target project already has a skill with the same name, compare and merge any local changes first. For other agents, place the entire `cv-deploy` directory in their supported skill location, or have them read `SKILL.md` directly. The reference guides ship with the skill and can be read offline.
