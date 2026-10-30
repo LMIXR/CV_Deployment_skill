@@ -243,7 +243,7 @@
 
 ## iOS
 
-整理后的入口：[iOS](tools.md)。
+整理后的入口：[iOS](tools.md#ios--cocoapods)。
 
 - [ios/pod.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/ios/pod.md) — 笔记
 
