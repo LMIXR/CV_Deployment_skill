@@ -249,19 +249,19 @@
 
 ## PHP
 
-整理后的入口：[PHP](tools.md)。
+整理后的入口：[PHP](tools.md#雷达php-与格式化)。
 
 - [php/ubuntu.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/php/ubuntu.md) — 笔记
 
 ## 雷达工具
 
-整理后的入口：[雷达工具](tools.md)。
+整理后的入口：[雷达工具](tools.md#雷达php-与格式化)。
 
 - [雷达/ubuntu.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/%E9%9B%B7%E8%BE%BE/ubuntu.md) — 笔记
 
 ## Uncrustify
 
-整理后的入口：[Uncrustify](tools.md)。
+整理后的入口：[Uncrustify](tools.md#雷达php-与格式化)。
 
 - [代码格式化/uncrustify/defaults.cfg](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/uncrustify/defaults.cfg) — 脚本 / 配置
 - [代码格式化/uncrustify/macos.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/uncrustify/macos.md) — 笔记
