@@ -150,7 +150,7 @@
 
 ## Windows 服务
 
-整理后的入口：[Windows 服务](deployment.md)。
+整理后的入口：[Windows 服务](deployment.md#windows-与-macos)。
 
 - [windows/服务.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/windows/%E6%9C%8D%E5%8A%A1.md) — 笔记
 
