@@ -124,7 +124,7 @@
 
 ## GB28181 与媒体服务
 
-整理后的入口：[GB28181 与媒体服务](video.md)。
+整理后的入口：[GB28181 与媒体服务](video.md#gb28181wvp--zlmediakit)。
 
 - [流媒体/GB28181.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/%E6%B5%81%E5%AA%92%E4%BD%93/GB28181.md) — 笔记
 - [流媒体/wvp/auto-del-log.sh](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/%E6%B5%81%E5%AA%92%E4%BD%93/wvp/auto-del-log.sh) — 脚本 / 配置
