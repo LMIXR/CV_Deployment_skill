@@ -156,7 +156,7 @@
 
 ## Nginx
 
-整理后的入口：[Nginx](deployment.md)。
+整理后的入口：[Nginx](deployment.md#windows-与-macos)。
 
 - [nginx/windows/nginx-service.exe.config](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/nginx/windows/nginx-service.exe.config) — 脚本 / 配置
 - [nginx/windows/nginx-service.xml](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/nginx/windows/nginx-service.xml) — 脚本 / 配置
