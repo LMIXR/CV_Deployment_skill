@@ -49,12 +49,16 @@ cmake --install "$BUILD_DIR"
 - 使用目标解释器的 `python -m pip`，项目有虚拟环境时直接复用。服务的解释器绝对路径必须指向同一环境；原文记录了用户安装包与 root 服务看不到同一 site-packages 的问题。
 - Python 源码编译前准备 zlib、OpenSSL、xz 等所需开发依赖；使用独立前缀，不替换操作系统依赖的 Python。
 - PyTorch 的 torch / torchvision / torchaudio、Python ABI、CPU / CUDA 构建需成套选择。原文包含不同版本组合，不能将其拼成一份依赖文件。
-- 离线经验是先下载 wheel 及依赖，再从本地安装。尽量在匹配目标的环境收集；跨平台下载须指定实际平台 / ABI 并处理源码包依赖。
+- 离线经验是先下载 wheel 及依赖，再从本地安装。尽量在匹配目标的环境收集；跨平台下载须指定目标平台、Python 版本、实现与 ABI。
+
+下面采用仅 wheel 的准备流程，要求需求文件及其依赖可解析为兼容 wheel。`--only-binary=:all:` 使缺少兼容 wheel 的包在下载阶段报错；只有下载完整成功后才转入离线安装。
 
 ```sh
-python -m pip download --dest "$WHEEL_DIR" -r "$REQUIREMENTS_FILE"
-python -m pip install --no-index --find-links "$WHEEL_DIR" -r "$REQUIREMENTS_FILE"
+python -m pip download --only-binary=:all: --dest "$WHEEL_DIR" -r "$REQUIREMENTS_FILE"
+python -m pip install --only-binary=:all: --no-index --find-links "$WHEEL_DIR" -r "$REQUIREMENTS_FILE"
 ```
+
+即使下载环境与目标匹配，下载源码包也不保证其隔离构建依赖已保存到 `WHEEL_DIR`。缺少 wheel 时，应在联网且匹配目标的构建环境中准备构建依赖、编译器和开发库，先构建兼容 wheel，并收集全部运行依赖的 wheel；不要仅去掉 `--only-binary` 后把源码包带到离线机。需求中的源码 URL、本地源码目录或 VCS 引用也须预先构建为 wheel，并将离线需求改为从 `WHEEL_DIR` 解析对应产物，不能依赖该选项将显式源码引用自动转换为 wheel。
 
 有 CUDA 专用索引时同时保留项目对应的索引配置。wheel 不支持平台时重新选择正确产物或编译，不能改名掩盖不兼容。
 
