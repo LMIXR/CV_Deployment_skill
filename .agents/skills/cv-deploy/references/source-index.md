@@ -215,7 +215,7 @@
 
 ## Ansible 与 Semaphore
 
-整理后的入口：[Ansible 与 Semaphore](tools.md)。
+整理后的入口：[Ansible 与 Semaphore](tools.md#ansible--semaphore)。
 
 - [ansible/semaphore.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/ansible/semaphore.md) — 笔记
 - [ansible/安装.md](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/ansible/%E5%AE%89%E8%A3%85.md) — 笔记
