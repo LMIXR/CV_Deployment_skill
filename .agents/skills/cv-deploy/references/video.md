@@ -61,7 +61,7 @@
 4. 公网环境分别处理信令监听、媒体端口、宣告地址与 NAT 映射。Web 页面可达不代表 SIP / RTP 数据路径正常。
 5. 沿用版本实际提供的设备、点播和播放 API。原文的 `/api/devices`、`/api/play/{deviceId}/{channelId}` 与十六进制 stream id 是旧实现线索，不能把它们当成所有版本的接口契约。
 
-WVP 与 ZLMediaKit 的服务管理见[部署](deployment.md)。不要执行原启动脚本中并列的 Ubuntu16 / Ubuntu18 两条启动示例，以免重复启动。
+WVP 与 ZLMediaKit 的服务管理见[部署](deployment.md#systemd)。不要执行原启动脚本中并列的 Ubuntu16 / Ubuntu18 两条启动示例，以免重复启动。
 
 ## 按症状缩小范围
 
