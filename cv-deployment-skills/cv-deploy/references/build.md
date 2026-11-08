@@ -55,7 +55,12 @@ cmake --install "$BUILD_DIR"
 
 ```sh
 python -m pip download --only-binary=:all: --dest "$WHEEL_DIR" -r "$REQUIREMENTS_FILE"
-python -m pip install --only-binary=:all: --no-index --find-links "$WHEEL_DIR" -r "$REQUIREMENTS_FILE"
+```
+
+下载成功后，准备单独的离线需求文件，并将其路径设为 `OFFLINE_REQUIREMENTS_FILE`。将需求中的远程 wheel URL（包括裸 URL 和 `包名 @ https://…/*.whl` 形式）改为从 `WHEEL_DIR` 解析对应已收集 wheel 的包名与精确版本，或指向该 wheel 在目标机上的本地路径；保留原有 extras、环境标记和适用的哈希约束。`--no-index` 只禁用包索引，`--find-links` 不会替换显式 URL，因此不能直接沿用仍含远程 wheel 引用的需求文件进行离线安装。
+
+```sh
+python -m pip install --only-binary=:all: --no-index --find-links "$WHEEL_DIR" -r "$OFFLINE_REQUIREMENTS_FILE"
 ```
 
 即使下载环境与目标匹配，下载源码包也不保证其隔离构建依赖已保存到 `WHEEL_DIR`。缺少 wheel 时，应在联网且匹配目标的构建环境中准备构建依赖、编译器和开发库，先构建兼容 wheel，并收集全部运行依赖的 wheel；不要仅去掉 `--only-binary` 后把源码包带到离线机。需求中的源码 URL、本地源码目录或 VCS 引用也须预先构建为 wheel，并将离线需求改为从 `WHEEL_DIR` 解析对应产物，不能依赖该选项将显式源码引用自动转换为 wheel。
