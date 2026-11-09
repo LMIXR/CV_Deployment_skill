@@ -44,7 +44,7 @@
 - 服务依赖、JDK、数据目录、SASL / JAAS 和 ACL 要相互一致；凭据放在目标已有配置机制中。
 - Windows 原文通过删同级 tmp 排错；实际目录可能含 broker 数据，须先识别用途，不能默认删除。
 - Flume 原文是文件日志 → exec source → memory channel → Kafka sink，依赖 Windows 上可用的 tail 工具。确认路径、channel 容量、topic、broker 和持久化要求，再适配配置。
-- Qt / C++ 的 Kafka 客户端属于 librdkafka 编译任务，见[依赖编译](build.md)。
+- Qt / C++ 的 Kafka 客户端属于 librdkafka 编译任务，见[依赖编译](build.md#qt-与常用-c-依赖)。
 
 ## JDK / Tomcat
 
