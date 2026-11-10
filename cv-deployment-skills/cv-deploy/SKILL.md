@@ -21,7 +21,7 @@ description: 基于 helpfile 工程经验，协助 agent 配置 CV 主机和边�
 | Ansible、Jenkins、Jitsi、移动端工具与其他辅助任务 | [配套工具](references/tools.md) |
 | 查找原文、复现旧环境、定位资料缺口 | [来源索引](references/source-index.md) |
 
-例如“摄像头连上但 Qt 没有画面”先读视频和部署中的插件部分；“编译提示找不到库”先读编译中的发现与链接部分。不要因项目使用 NVIDIA 就自动重装驱动。
+例如“摄像头连上但 Qt 没有画面”先读[视频](references/video.md)和[部署中的插件部分](references/deployment.md#linux--qt-打包)；“编译提示找不到库”先读[编译中的发现与链接部分](references/build.md#构建关系与库发现)。不要因项目使用 NVIDIA 就自动重装驱动。
 
 ## 形成当前环境画像
 
