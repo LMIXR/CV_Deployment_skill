@@ -13,6 +13,14 @@
 
 共索引 119 个工程文本文件。
 
+## 章节导航
+
+- [来源与用法](#来源与用法) · [常用检索线索](#常用检索线索)
+- [Ubuntu 与边缘设备](#ubuntu-与边缘设备) · [Qt 与跨平台 C++](#qt-与跨平台-c) · [Python 与 PyTorch](#python-与-pytorch) · [Paddle](#paddle) · [tkDNN](#tkdnn)
+- [GB28181 与媒体服务](#gb28181-与媒体服务) · [Docker 与容器服务](#docker-与容器服务) · [Windows 服务](#windows-服务) · [Nginx](#nginx)
+- [MySQL](#mysql) · [MongoDB](#mongodb) · [Redis](#redis) · [MinIO](#minio) · [Kafka](#kafka) · [Flume](#flume) · [Tomcat](#tomcat)
+- [Ansible 与 Semaphore](#ansible-与-semaphore) · [Jenkins](#jenkins) · [Jitsi](#jitsi) · [Android](#android) · [iOS](#ios) · [PHP](#php) · [雷达工具](#雷达工具) · [Uncrustify](#uncrustify)
+
 ## 常用检索线索
 
 | 任务 / 错误 | 查找原始路径 |
