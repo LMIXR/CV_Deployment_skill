@@ -26,13 +26,13 @@
 | 任务 / 错误 | 查找原始路径 |
 | --- | --- |
 | 驱动版本冲突、CUDA 初始化 | [`ubuntu/显卡环境.md`](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/ubuntu/%E6%98%BE%E5%8D%A1%E7%8E%AF%E5%A2%83.md)、[`ubuntu/cuda.md`](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/ubuntu/cuda.md) |
-| JetPack、NVMe、ARM Qt | `ubuntu/Jetson*`、`qt/jetson/` |
+| JetPack、NVMe、ARM Qt | [`ubuntu/Jetson*`](#ubuntu-与边缘设备)、[`qt/jetson/`](#qt-与跨平台-c) |
 | OpenCV contrib 下载或 NVCUVID | [`qt/ubuntu/opencv.md`](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/qt/ubuntu/opencv.md) |
 | NVENC 编译、GStreamer 插件 | [`qt/ubuntu/ffmpeg.md`](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/qt/ubuntu/ffmpeg.md)、[`qt/ubuntu/gst-rtsp-server.md`](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/qt/ubuntu/gst-rtsp-server.md) |
-| MSVC / DLL / Qt kit | `qt/windows/` |
-| macOS dylib / MySQL 插件 | `qt/macos/` |
+| MSVC / DLL / Qt kit | [`qt/windows/`](#qt-与跨平台-c) |
+| macOS dylib / MySQL 插件 | [`qt/macos/`](#qt-与跨平台-c) |
 | WVP、RTP、公网播放 | [`流媒体/GB28181.md`](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/%E6%B5%81%E5%AA%92%E4%BD%93/GB28181.md) |
-| systemd、PID、打包 | `qt/ubuntu/打包/`、`流媒体/` |
+| systemd、PID、打包 | [`qt/ubuntu/打包/`](#qt-与跨平台-c)、[`流媒体/`](#gb28181-与媒体服务) |
 | 离线包 / wheel | [`ubuntu/包.md`](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/ubuntu/%E5%8C%85.md)、`python/`、`mysql/` |
 
 ## Ubuntu 与边缘设备
