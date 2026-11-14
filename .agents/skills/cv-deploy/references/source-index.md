@@ -33,7 +33,7 @@
 | macOS dylib / MySQL 插件 | [`qt/macos/`](#qt-与跨平台-c) |
 | WVP、RTP、公网播放 | [`流媒体/GB28181.md`](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/%E6%B5%81%E5%AA%92%E4%BD%93/GB28181.md) |
 | systemd、PID、打包 | [`qt/ubuntu/打包/`](#qt-与跨平台-c)、[`流媒体/`](#gb28181-与媒体服务) |
-| 离线包 / wheel | [`ubuntu/包.md`](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/ubuntu/%E5%8C%85.md)、`python/`、`mysql/` |
+| 离线包 / wheel | [`ubuntu/包.md`](https://github.com/LMIXR/helpfile/blob/db013a05ed08d29fdab01a684176af866e5ee565/ubuntu/%E5%8C%85.md)、[`python/`](#python-与-pytorch)、[`mysql/`](#mysql) |
 
 ## Ubuntu 与边缘设备
 
