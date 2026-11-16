@@ -2,6 +2,11 @@
 
 来源：`qt/`、`python/`、`paddle/ubuntu.md`、`tkdnn/ubuntu.md`、`ubuntu/cuda.md`；见[来源索引](source-index.md)。FFmpeg / GStreamer 的细节在[视频接入](video.md)。
 
+## 章节导航
+
+- [构建关系与库发现](#构建关系与库发现) · [OpenCV](#opencv) · [Python、PyTorch 与 Libtorch](#pythonpytorch-与-libtorch)
+- [Qt 与常用 C++ 依赖](#qt-与常用-c-依赖) · [推理库](#推理库) · [Windows 与 macOS](#windows-与-macos)
+
 ## 构建关系与库发现
 
 先识别项目使用的 CMake、qmake、Autotools、MSBuild 或 nmake。复用它的构建方式与工具版本。Linux / macOS 不要用全局编译器软链接替换实现项目降级；通过项目构建参数指定编译器。
