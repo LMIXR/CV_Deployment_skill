@@ -68,7 +68,7 @@ WantedBy=multi-user.target
 
 - 保留项目已有镜像和编排方式；版本 / digest、CPU 架构、数据卷、配置挂载、端口和启动参数显式化。
 - Ubuntu 安装源中的 `arch=amd64` 只适用于对应架构；不能直接移到 Jetson。旧 `apt-key` 命令以目标版本官方安装流程替换。
-- 容器部署仍依赖主机 GPU 驱动；原文没有完整 NVIDIA 容器运行时配置，不补造已支持的版本组合。
+- 只有容器内的应用使用主机 GPU 时，才需要相应的主机 GPU 驱动。原文没有完整 NVIDIA 容器运行时配置，不补造已支持的版本组合。
 - 数据库的 data / logs / conf 卷按实际服务拆分。账号口令由已有凭据机制提供，不复制原文 `docker run` 中的密码。
 - ELK 的 `vm.max_map_count` 是特定组件的系统参数，只有部署该组件且版本需要时才调整。
 - 原文 Swarm 使用 docker-machine / VirtualBox，只作为旧环境复现资料；已有真实节点不需要照着新建虚拟机。
