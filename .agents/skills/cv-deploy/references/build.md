@@ -103,6 +103,6 @@ python -m pip install --only-binary=:all: --no-index --find-links "$WHEEL_DIR" -
 
 ## Windows 与 macOS
 
-Windows：用目标 Qt kit 对应的 VS 开发者终端；明确 x86 / x64、Debug / Release、MSVC / MinGW、`/MD` / `/MT`。不要将所有依赖改成原文的 VS2015。CMake generator 按本机和项目实际工具集选择。
+Windows：先确认目标 Qt kit 的架构（x86 / x64）和项目的构建配置（Debug / Release）。使用 MSVC kit 时，打开与工具集和目标架构匹配的 VS 开发者终端，并核对项目的 `/MD` / `/MT` 运行库设置。使用 MinGW kit 时，将该 kit 配套的 MinGW 工具链的 `bin` 目录放在当前 shell 的 `PATH` 首位。不要将所有依赖改成原文的 VS2015。CMake generator 按本机和项目实际工具集选择。
 
 macOS：先确定 CPU 架构和编译目标；Homebrew 与 MySQL 前缀由本机定位。Qt SQL driver 需要匹配 Qt、客户端 dylib 和架构，发布时处理动态库加载路径；原文 `/usr/local` 并非所有 Mac 的固定路径。
