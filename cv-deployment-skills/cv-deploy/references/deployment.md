@@ -2,6 +2,11 @@
 
 来源：`qt/ubuntu/打包/`、`qt/windows/打包.md`、`windows/服务.md`、`nginx/windows/`、`docker/`、`流媒体/`、`ubuntu/脚本/`、`tomcat/`；见[来源索引](source-index.md)。
 
+## 章节导航
+
+- [应用目录与运行环境](#应用目录与运行环境) · [Linux / Qt 打包](#linux--qt-打包) · [systemd](#systemd)
+- [Windows 与 macOS](#windows-与-macos) · [Docker](#docker) · [日志和录像保留](#日志和录像保留)
+
 ## 应用目录与运行环境
 
 先识别应用二进制、配置、动态库、插件、模型和数据目录；部署路径、服务名、监听端口与用户现有接口保持一致。
