@@ -88,7 +88,7 @@ python -m pip install --only-binary=:all: --no-index --find-links "$WHEEL_DIR" -
 | OpenSSL | 对齐消费方要求的 ABI；原文复制 so 到 Qt 的动作不是通用升级流程 |
 | MongoDB C / C++ driver | 先 C driver / BSON，再 C++ driver / BSON C++；同前缀下发现，原文 Linux 页里的 `.dylib` 路径不能当成 Linux 产物 |
 | Thrift | 编译器生成端和 C++ 运行库版本配套；Windows 手工改源码仅作旧 0.13.0 排错线索 |
-| libevent / librdkafka | Windows 指定 x64 与 OpenSSL 等真实依赖；原文 librdkafka 页提及 OpenCV 路径属于需核实内容 |
+| libevent / librdkafka | 在 Windows 上按应用的目标架构（x86 / x64）构建这两个库，OpenSSL 等实际需要的依赖也选用相同架构。原文 librdkafka 页提及 OpenCV 路径属于需核实内容 |
 | hiredis | 原文依赖归档 Windows Redis 分支及 Win32_Interop；仅用于指定旧项目，不能视为所有 Windows 项目的默认方案 |
 | SQL Server | 原文只有安装 `msodbcsql17` 的短记录，需结合目标发行版与应用 ODBC 接口 |
 | KDSoap / ONVIF | 用同一 Qt kit 构建 KDSoap；进一步见[视频接入](video.md) |
