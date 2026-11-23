@@ -57,6 +57,12 @@ WantedBy=multi-user.target
 - WVP 原文同时含前台和后台启动方式、旧 PermGen 参数及固定约 3.5 GiB 堆大小。按目标 JDK、内存与服务类型重写，不逐行照搬。
 - 停止服务优先走程序和服务管理器的正常退出路径；原文 `kill -9` 不作为普通停止方式。
 
+systemd 会在 `ExecStart=` 中展开百分号说明符。要把字面量 `%` 传给应用，在 unit 中写成 `%%`，即使参数已加引号也需要转义。例如，直接运行 FFmpeg 时，`-strftime 1` 使用 `frame-%Y%m%d.png`；放进 unit 后，写成下面这样，让 FFmpeg 收到原来的日期格式。按实际部署调整可执行文件、输入和输出目录，并确保服务用户能写入输出目录。
+
+```ini
+ExecStart=/usr/bin/ffmpeg -hide_banner -loglevel error -f lavfi -i color=size=16x16:rate=1 -frames:v 1 -threads 1 -f image2 -strftime 1 "/tmp/frame-%%Y%%m%%d.png"
+```
+
 生成 unit 与实际启用服务分开处理。任务授权部署时执行所需安装、daemon reload 和启动；只有用户要求开机启动时或任务已明确包含自启动才 enable。记录实际操作，不把生成配置描述成服务已经运行。
 
 ## Windows 与 macOS
