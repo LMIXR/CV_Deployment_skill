@@ -78,7 +78,7 @@ python -m pip install --only-binary=:all: --no-index --find-links "$WHEEL_DIR" -
 
 | 组件 | 可复用经验与适配规则 |
 | --- | --- |
-| Qt SDK | 显式选择项目的 qmake / kit；Linux GUI 依赖 X11 / OpenGL，服务环境另看插件和显示条件 |
+| Qt SDK | 显式选择项目的 qmake / kit。Linux GUI 按所选平台插件和渲染方式准备依赖。`xcb` 插件需要 X11，使用 OpenGL 渲染时需准备相应库。`linuxfb` 插件可通过软件光栅渲染直接输出到帧缓冲。服务环境另看插件和显示条件 |
 | Qt MySQL 插件 | 使用应用相同 Qt 源码和 kit 构建 SQL driver；同时部署 `qsqlmysql` 插件与 MySQL 客户端库 |
 | Qt 多媒体 / Charts | 原文含 Jetson 发行版包路径；缺开发包应解决依赖，不能任意伪造版本软链接 |
 | QuaZip | 原文通过 `CMAKE_PREFIX_PATH` 选择 Qt；先对齐 Qt 主版本和该库的构建选项 |
